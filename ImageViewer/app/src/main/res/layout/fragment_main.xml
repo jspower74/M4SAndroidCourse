@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            tools:context="com.example.js.imageviewer.MainActivityFragment"
+            tools:showIn="@layout/content_main"
+            android:gravity="center">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+        <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:columnCount="2"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="GOD IS LOVE"
+                    android:id="@+id/textView"
+                    android:layout_columnSpan="2"
+                    android:background="#d71414"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_marginBottom="22dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:background="@drawable/el"
+                    android:layout_width="164dp"
+                    android:layout_height="164dp" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:background="@drawable/js"
+                    android:layout_width="164dp"
+                    android:layout_height="164dp" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:background="@drawable/uit"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center" />
+
+            </GridLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
