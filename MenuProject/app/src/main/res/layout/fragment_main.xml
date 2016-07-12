@@ -7,70 +7,53 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.js.menuproject.MainActivityFragment"
-    tools:showIn="@layout/activity_main"
-    android:background="#d35400">
+    tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textStyle="bold"
-        android:textColor="@android:color/background_light"
-        android:id="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView" />
+        android:text="SMS"
+        android:id="@+id/bSMS" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignParentStart="true" />
+        android:text="PHONE"
+        android:id="@+id/bPHONE"
+        android:layout_below="@+id/bSMS"
+        android:layout_alignEnd="@+id/bSMS" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignParentStart="true" />
+        android:text="WEB"
+        android:id="@+id/bWEB"
+        android:layout_below="@+id/bPHONE"
+        android:layout_alignEnd="@+id/bPHONE" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentStart="true" />
+        android:text="MAP"
+        android:id="@+id/bMAP"
+        android:layout_below="@+id/bWEB"
+        android:layout_alignEnd="@+id/bWEB" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_alignParentStart="true" />
+        android:text="SHARE"
+        android:id="@+id/bSHARE"
+        android:layout_below="@+id/bMAP"
+        android:layout_alignEnd="@+id/bMAP" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_alignParentStart="true" />
+        android:text="NEW ACTIVITY"
+        android:id="@+id/bNAC"
+        android:layout_below="@+id/bSHARE" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button7"
-        android:layout_below="@+id/button6"
-        android:layout_alignEnd="@+id/button6" />
 
 </RelativeLayout>
