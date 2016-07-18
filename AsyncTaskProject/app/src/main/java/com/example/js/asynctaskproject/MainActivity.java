@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -84,7 +86,9 @@ public class MainActivity extends AppCompatActivity {
 
                 //Vérification de la connexion
                 if (con.getResponseCode() != HttpURLConnection.HTTP_OK) {
-                    throw new Exception("La connexion Wifi à échouer");
+                    //Message appelant à la connexion
+                    Toast.makeText(getApplicationContext(),"connecter d'abord",Toast.LENGTH_SHORT).show();
+                    MessProg.dismiss();
                 }
                 //Decodage du Bitmap
                 InputStream is = con.getInputStream();
